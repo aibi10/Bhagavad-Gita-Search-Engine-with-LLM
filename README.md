@@ -1,8 +1,7 @@
 # Bhagavad-Gita-Search-Engine-with-LLM
 
-https://user-images.githubusercontent.com/45706760/192133104-54ccd70a-1d64-416c-8754-0d4c77130cfa.mp4
 
-<img src="demo/6.jpeg" alt="workflow" width="70%">
+<img src="demo/image 1.png" alt="workflow" width="70%">
 
 Recommendation systems are becoming increasingly important in today’s extremely busy world. People are always short on time with the myriad tasks they need to accomplish in the limited 24 hours. Therefore, the recommendation systems are important as they help them make the right choices, without having to expend their cognitive resources.
 
