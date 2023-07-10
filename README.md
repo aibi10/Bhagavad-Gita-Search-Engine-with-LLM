@@ -1,5 +1,9 @@
 # Bhagavad-Gita-Search-Engine-with-LLM
 
+https://github.com/aibi10/Bhagavad-Gita-Search-Engine-with-LLM/assets/45706760/7c1c5e76-e9d4-438a-b197-9b657db6a117
+
+
+
 
 <img src="demo/image 1.png" alt="workflow" width="70%">
 
