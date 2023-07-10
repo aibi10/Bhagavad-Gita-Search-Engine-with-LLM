@@ -5,11 +5,7 @@
 
 Recommendation systems are becoming increasingly important in today’s extremely busy world. People are always short on time with the myriad tasks they need to accomplish in the limited 24 hours. Therefore, the recommendation systems are important as they help them make the right choices, without having to expend their cognitive resources.
 
-The purpose of a recommendation system basically is to search for content that would be interesting to an individual. Moreover, it involves a number of factors to create personalised lists of useful and interesting content specific to each user/individual. Recommendation systems are Artificial Intelligence based algorithms that skim through all possible options an
-
-https://user-images.githubusercontent.com/45706760/192133104-54ccd70a-1d64-416c-8754-0d4c77130cfa.mp4
-
-d create a customized list of items that are interesting and relevant to an individual. These results are based on their profile, search/browsing history, what other people with similar traits/demographics are watching, and how likely are you to watch those movies. This is achieved through predictive modeling and heuristics with the data available.
+The purpose of a recommendation system basically is to search for content that would be interesting to an individual. Moreover, it involves a number of factors to create personalised lists of useful and interesting content specific to each user/individual. Recommendation systems are Artificial Intelligence based algorithms that skim through all possible options and create a customized list of items that are interesting and relevant to an individual. These results are based on their profile, search/browsing history, what other people with similar traits/demographics are watching, and how likely are you to watch those movies. This is achieved through predictive modeling and heuristics with the data available.
 
 # Types of Recommendation System :
 
@@ -57,27 +53,16 @@ here is a demo,
 
 # Demo:
 
-<img src="demo/1.png" alt="workflow" width="70%">
+<img src="demo/image 2.png" alt="workflow" width="70%">
 
-<img src="demo/2.png" alt="workflow" width="70%">
+<img src="demo/image 3.png" alt="workflow" width="70%">
 
-<img src="demo/3.png" alt="workflow" width="70%">
+<img src="demo/image 4.png" alt="workflow" width="70%">
 
 # Dataset has been used:
 
-- [Dataset link](https://www.kaggle.com/tmdb/tmdb-movie-metadata?select=tmdb_5000_movies.csv)
+- [Dataset link](https://libgen.is/book/index.php?md5=8B7A20960F8B81D3BAF6A2E64E24FF37)
 
-# Concept used to build the model.pkl file : cosine_similarity
-
-1 . Cosine Similarity is a metric that allows you to measure the similarity of the documents.
-
-2 . In order to demonstrate cosine similarity function we need vectors. Here vectors are numpy array.
-
-3 . Finally, Once we have vectors, We can call cosine_similarity() by passing both vectors. It will calculate the cosine similarity between these two.
-
-4 . It will be a value between [0,1]. If it is 0 then both vectors are complete different. But in the place of that if it is 1, It will be completely similar.
-
-5 . For more details , check URL : https://www.learndatasci.com/glossary/cosine-similarity/
 
 # How to run?
 
@@ -86,17 +71,17 @@ here is a demo,
 Clone the repository
 
 ```bash
-https://github.com/aibi10/Movie-Recommender-System.git
+https://github.com/aibi10/Bhagavad-Gita-Search-Engine-with-LLM
 ```
 
 ### STEP 01- Create a conda environment after opening the repository
 
 ```bash
-conda create -n movie python=3.7.10 -y
+conda create -n Gita python=3.7.10 -y
 ```
 
 ```bash
-conda activate movie
+conda activate Gita
 ```
 
 ### STEP 02- install the requirements
@@ -105,27 +90,26 @@ conda activate movie
 pip install -r requirements.txt
 ```
 
-### STEP 03- create environment specification in conda.yaml
+### STEP 03- add Open AI API key in line 12 of app.py
 
 ```bash
-conda env export > conda.yaml
+os.environ["OPENAI_API_KEY"] = "xx-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 ```
 
-### STEP 04 - run this command to genrate pickle files
+### STEP 04 - add path to pdf book in line 19
 
 ```bash
-mlflow run . --no-conda
+reader = PdfReader(r"C:\Users\XXXXX\Downloads\Eknath Easwaran - The Bhagavad Gita  -Nilgiri Press (2007).pdf")
 ```
 
 ### STEP 05 - run this command to run the app in your browser
 
 ```bash
-streamlit run app.py
+python run app.py
 ```
 
 ```bash
 Author: Abhishek Singh
 Data Scientist
 Email: isingh.abhishek10@gmail.com
-
 ```
