@@ -3,59 +3,29 @@
 
 <img src="demo/image 1.png" alt="workflow" width="70%">
 
-Recommendation systems are becoming increasingly important in today’s extremely busy world. People are always short on time with the myriad tasks they need to accomplish in the limited 24 hours. Therefore, the recommendation systems are important as they help them make the right choices, without having to expend their cognitive resources.
+A large language model is a sophisticated artificial intelligence system designed to generate human-like text and understand natural language. It is trained on vast amounts of diverse data, including books, articles, websites, and other textual sources. These models employ deep learning techniques, particularly transformer architectures, to learn the statistical patterns and relationships in the language data.
 
-The purpose of a recommendation system basically is to search for content that would be interesting to an individual. Moreover, it involves a number of factors to create personalised lists of useful and interesting content specific to each user/individual. Recommendation systems are Artificial Intelligence based algorithms that skim through all possible options and create a customized list of items that are interesting and relevant to an individual. These results are based on their profile, search/browsing history, what other people with similar traits/demographics are watching, and how likely are you to watch those movies. This is achieved through predictive modeling and heuristics with the data available.
+One notable characteristic of large language models is their ability to generate text that often exhibits remarkable fluency, demonstrating an understanding of grammar, syntax, and semantic structures. They can produce lengthy and detailed responses, offering relevant and informative information based on the input provided.
 
-# Types of Recommendation System :
+These models have the potential to revolutionize various fields, including content creation, customer support, language translation, and academic research. They can assist users in generating written content, provide insights and answers to complex queries, and even facilitate natural and engaging conversations.
 
-### 1 ) Content Based :
+## The Da Vinci model :
 
-- Content-based systems, which use characteristic information and takes item attriubutes into consideration .
+The Da Vinci model is a highly advanced language model developed by OpenAI, named after the legendary artist and polymath Leonardo da Vinci. Building upon the success of previous models like GPT-3, the Da Vinci model represents a significant leap forward in natural language processing capabilities.
 
-- Twitter , Youtube .
+With a vast number of parameters and an enhanced understanding of context, the Da Vinci model aims to produce even more coherent, contextually accurate, and nuanced responses. It leverages state-of-the-art techniques, including the transformer architecture and unsupervised learning, to generate human-like text that can mimic the style and tone of specific prompts.
 
-- Which music you are listening , what singer are you watching . Form embeddings for the features .
-- User specific actions or similar items reccomendation .
-- It will create a vector of it .
-- These systems make recommendations using a user's item and profile features. They hypothesize that if a user was interested in an item in the past, they will once again be interested in it in the future
-- One issue that arises is making obvious recommendations because of excessive specialization (user A is only interested in categories B, C, and D, and the system is not able to recommend items outside those categories, even though they could be interesting to them).
+The Da Vinci model has been trained on a diverse range of internet text, covering an extensive array of topics and domains. This comprehensive training allows it to provide in-depth and accurate information on various subjects, answer complex questions, assist with creative writing, and engage in more interactive and dynamic conversations.
 
-### 2 ) Collaborative Based :
 
-- Collaborative filtering systems, which are based on user-item interactions.
-- Clusters of users with same ratings , similar users .
-- Book recommendation , so use cluster mechanism .
-- We take only one parameter , ratings or comments .
-- In short, collaborative filtering systems are based on the assumption that if a user likes item A and another user likes the same item A as well as another item, item B, the first user could also be interested in the second item .
-- Issues are :
-
-  - User-Item nXn matrix , so computationally expensive .
-
-  - Only famous items will get reccomended .
-
-  - New items might not get reccomended at all .
-
-### 3 ) Hybrid Based :
-
-- Hybrid systems, which combine both types of information with the aim of avoiding problems that are generated when working with just one kind.
-
-- Combination of both and used now a days .
-
-- Uses : word2vec , embedding .
-
-# About this project:
-
-This is a streamlit web application that can recommend various kinds of similar movies based on an user interest.
-here is a demo,
-
-- [Click here to run it live on server](https://movie-recommeder-system.herokuapp.com/)
 
 # Demo:
 
 <img src="demo/image 2.png" alt="workflow" width="70%">
+<br>
 
 <img src="demo/image 3.png" alt="workflow" width="70%">
+<br>
 
 <img src="demo/image 4.png" alt="workflow" width="70%">
 
