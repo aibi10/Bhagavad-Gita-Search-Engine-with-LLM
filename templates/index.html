@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ heading }}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 40px;
+            font-weight: normal;
+            font-family: "Arial Black", sans-serif;
+            text-transform: uppercase;
+            letter-spacing: -2px;
+        }
+
+        .gita-heading {
+            display: inline-block;
+            background: linear-gradient(90deg, #4285f4, #ea4335, #fbbc05, #34a853);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        form {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        label {
+            font-size: 18px;
+            color: #333;
+        }
+        
+        input[type="text"] {
+            padding: 8px;
+            font-size: 20px; /* Updated font size to 20px */
+            border: 1px solid #dfe1e5;
+            border-radius: 24px;
+            width: 600px; /* Updated width to make the search bar wider */
+            max-width: 90%;
+            outline: none;
+            transition: box-shadow 0.3s;
+        }
+
+        input[type="text"]:focus {
+            box-shadow: 0 0 0 1px #4285f4, 0 0 0 2px rgba(66, 133, 244, 0.3);
+        }
+        
+        input[type="submit"] {
+            margin-top: 10px;
+            padding: 8px 20px;
+            font-size: 16px;
+            background-color: #4285f4;
+            color: #fff;
+            border: none;
+            border-radius: 24px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #3367d6;
+        }
+        
+        h3 {
+            margin-top: 30px;
+            font-size: 20px; /* Changed font size to 20px */
+            color: #333;
+        }
+        
+        p {
+            font-size: 20px; /* Changed font size to 20px */
+            color: #333;
+        }
+        
+        .footer {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            font-size: 14px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <h1><span class="gita-heading">Bhagavad Gita</span></h1>
+
+    <form method="post">
+        <label for="query"></label>
+        <br>
+        <input type="text" id="query" name="query" placeholder="Search the Bhagavad Gita" autocomplete="off">
+        <br>
+        <input type="submit" value="Search">
+    </form>
+
+    {% if query %}
+        <h3>Question: {{ query }}</h3>
+        <p>Answer: {{ answer }}</p>
+    {% endif %}
+
+    <div class="footer">
+        Created by Abhishek Singh
+    </div>
+</body>
+</html>
